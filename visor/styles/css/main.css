@@ -1,0 +1,8 @@
+.active-layers-counter{
+  color:white !important;
+}
+
+.tabulator-page.active {
+  color: white !important;
+  background-color:rgb(51, 122, 183) !important;
+}

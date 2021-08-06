@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "type": "basemap",
+      "peso": 1,
+      "nombre": "Mapas base",
+      "short_abstract": "",
+      "class": "",
+      "seccion": "mapasbase",
+      "capas": [
+        {
+          "titulo": "Argenmap",
+          "nombre": "argenmap",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "<a href='http://www.ign.gob.ar/AreaServicios/Argenmap/IntroduccionV2' target='_blank'>Instituto Geográfico Nacional</a> + <a href='http://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
+          "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",
+          "legendImg": "src/styles/images/argenmap.png",
+          "peso": 10,
+          "zoom": {
+            "min": 3,
+            "max": 21
+          },
+          "selected": true
+        },
+        {
+          "titulo": "Argenmap gris",
+          "nombre": "argenmap_gris",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "<a href='http://www.ign.gob.ar/AreaServicios/Argenmap/IntroduccionV2' target='_blank'>Instituto Geográfico Nacional</a> + <a href='http://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
+          "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/{z}/{x}/{-y}.png",
+          "legendImg": "src/styles/images/argenmap-gris.png",
+          "peso": 20,
+          "zoom": {
+            "min": 3,
+            "max": 21
+          }
+        },
+        {
+          "titulo": "Imágenes satelitales Esri",
+          "nombre": "esri_imagery",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Imágenes satelitales © Esri",
+          "host": "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+          "legendImg": "src/styles/images/esri.png",
+          "peso": 30,
+          "zoom": {
+            "min": 3,
+            "max": 21
+          }
+        },
+        {
+          "titulo": "Mapa topográfico Esri",
+          "nombre": "esri_imagery_t",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Mapa topográfico © Esri",
+          "host": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}",
+          "legendImg": "src/styles/images/esrit.png",
+          "peso": 40,
+          "zoom": {
+            "min": 3,
+            "max": 21
+          }
+        },
+        {
+          "titulo": "Imágenes satelitales Here",
+          "nombre": "here_imagery",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Imágenes satelitales © here",
+          "host": "https://2.aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{z}/{x}/{y}/256/png8?app_id=XiMlA4JwMurUFFYUWYe3&app_code=oTsmqovbl2YudG3E0UlxDA",
+          "legendImg": "src/styles/images/here.png",
+          "peso": 50,
+          "zoom": {
+            "min": 3,
+            "max": 21
+          }
+        }
+      ]
+    },
+    {
+      "id": "catastro",
+      "type": "wmslayer",
+      "peso": 10,
+      "nombre": "Catastro",
+      "short_abstract": "Objetos de gestión catastral",
+      "class": "",
+      "seccion": "catastro",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/catastro"
+    },
+    {
+      "id": "centros_administrativos",
+      "type": "wmslayer",
+      "peso": 20,
+      "nombre": "Centros Administrativos",
+      "short_abstract": "Objetos de gestión municipal y administrativa",
+      "class": "",
+      "seccion": "centros_administrativos",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/centros_administrativos"
+    },
+    {
+      "id": "cultura",
+      "type": "wmslayer",
+      "peso": 30,
+      "nombre": "Cultura",
+      "short_abstract": "Objetos de gestión cultural",
+      "class": "",
+      "seccion": "cultura",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/cultura"
+    },
+    {
+      "id": "educacion",
+      "type": "wmslayer",
+      "peso": 40,
+      "nombre": "Educación",
+      "short_abstract": "Escuelas, establecimientos educativos y afines",
+      "class": "",
+      "seccion": "educacion",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/educacion"
+    },
+    {
+      "id": "planeamiento_urbano",
+      "type": "wmslayer",
+      "peso": 50,
+      "nombre": "Planeamiento urbano",
+      "short_abstract": "Objetos de gestión urbana y su planificación.",
+      "class": "",
+      "seccion": "planeamiento_urbano",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/planeamiento_urbano"
+    },
+    {
+      "id": "salud",
+      "type": "wmslayer",
+      "peso": 60,
+      "nombre": "Salud",
+      "short_abstract": "Hospitales, centros de atención de salud y afines.",
+      "class": "",
+      "seccion": "salud",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/salud"
+    },
+    {
+      "id": "seguridad",
+      "type": "wmslayer",
+      "peso": 70,
+      "nombre": "Seguridad",
+      "short_abstract": "Objetos de gestión de seguridad.",
+      "class": "",
+      "seccion": "seguridad",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/seguridad"
+    },
+    {
+      "id": "servicios",
+      "type": "wmslayer",
+      "peso": 70,
+      "nombre": "Servicios",
+      "short_abstract": "Servicios municipales.",
+      "class": "",
+      "seccion": "servicios",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/servicios"
+    },
+    {
+      "id": "transporte_y_comunicacion",
+      "type": "wmslayer",
+      "peso": 80,
+      "nombre": "Transporte y comunicación",
+      "short_abstract": "Objetos de gestión de transporte y comunicaciones",
+      "class": "",
+      "seccion": "transporte_y_comunicacion",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://sanluis.ign.gob.ar/geoserver/transporte_y_comunicacion"
+    }
+  ],
+  "template": "argenmap-leaflet-muni-tpl-sanluis"
+}
